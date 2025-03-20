@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: print version ansible 
-        run: ansible --versionb
+        run: ansible --version
 
       - name: print version ansible-playbook 
         run: ansible-playbook --version
