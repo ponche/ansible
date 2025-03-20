@@ -5,10 +5,11 @@ on:
   repository_dispatch:
 
 jobs: 
-  - name: print version ansible 
-    run: ansible --versionb
+  steps: 
+    - name: print version ansible 
+      run: ansible --versionb
 
-  - name: print version ansible-playbook 
-    run: ansible-playbook --version
+    - name: print version ansible-playbook 
+      run: ansible-playbook --version
 
   
