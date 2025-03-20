@@ -5,11 +5,14 @@ on:
   repository_dispatch:
 
 jobs: 
-  steps: 
-    - name: print version ansible 
-      run: ansible --versionb
+  labo:
+    name: experiment ansible version
+    run-on: ubuntu-latest
+    steps: 
+      - name: print version ansible 
+        run: ansible --versionb
 
-    - name: print version ansible-playbook 
-      run: ansible-playbook --version
+      - name: print version ansible-playbook 
+        run: ansible-playbook --version
 
   
