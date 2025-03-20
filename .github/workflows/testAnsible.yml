@@ -1,0 +1,14 @@
+name: Workflow test 
+
+on: 
+  push:
+  repository_dispatch:
+
+jobs: 
+  - name: print version ansible 
+    run: ansible --versionb
+
+  - name: print version ansible-playbook 
+    run: ansible-playbook --version
+
+  
